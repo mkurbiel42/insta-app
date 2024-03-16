@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Your posts" android:id="@+id/menu_posts" android:icon="@drawable/user"/>
+    <item android:title="All posts" android:id="@+id/menu_all" android:icon="@drawable/list"/>
+    <item android:title="Create new" android:id="@+id/menu_create" android:icon="@drawable/add"/>
+</menu>

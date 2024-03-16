@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="5dp"
+    android:id="@+id/photo_root">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgv_photo"
+        android:adjustViewBounds="true"
+        />
+
+    <ImageView
+        android:src="@drawable/video"
+        android:layout_width="48dp"
+        app:tint="#ffffffff"
+        android:layout_height="wrap_content"
+        android:id="@+id/video_icon"
+        android:layout_margin="8dp"
+        android:layout_gravity="right|top"
+        android:visibility="gone"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:layout_gravity="left|bottom"
+        android:visibility="gone"
+        android:id="@+id/pfpWrapper"
+        app:cardCornerRadius="500dp"
+        app:cardBackgroundColor="@color/black">
+
+        <ImageView
+            android:padding="6dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/pfp"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/pfp"
+            android:scaleType="centerCrop"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    </androidx.cardview.widget.CardView>

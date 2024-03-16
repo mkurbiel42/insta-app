@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.FiltersFragment"
+    android:background="@color/cardview_dark_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="76dp"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rotate:"
+                android:textSize="24dp"
+                android:layout_marginHorizontal="16dp"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rotate_right"
+                    android:layout_weight="1"
+                    android:background="@color/text"
+                    app:tint="@color/white"
+                    android:padding="8dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:id="@+id/rotate_left"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/rotate_180"
+                    android:background="@color/text"
+                    app:tint="@color/white"
+                    android:padding="8dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:id="@+id/rotate_180"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/rotate_left"
+                    android:background="@color/text"
+                    app:tint="@color/white"
+                    android:padding="8dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:id="@+id/rotate_right"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Flip:"
+                android:textSize="24dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="24dp"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:src="@drawable/flip"
+                    android:background="@color/text"
+                    app:tint="@color/white"
+                    android:padding="8dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:id="@+id/flip"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:src="@drawable/flop"
+                    android:background="@color/text"
+                    app:tint="@color/white"
+                    android:padding="8dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:id="@+id/flop"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recolor:"
+                android:textSize="24dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="24dp"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:src="@drawable/grayscale2"
+                    android:background="@color/text"
+                    app:tint="@color/white"
+                    android:padding="8dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:id="@+id/grayscale"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:src="@drawable/negate"
+                    android:background="@color/text"
+                    app:tint="@color/white"
+                    android:padding="8dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:id="@+id/negate"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#33ffffff"
+        android:layout_marginBottom="76dp"
+        android:layout_gravity="bottom"/>
+
+</FrameLayout>

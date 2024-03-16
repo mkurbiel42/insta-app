@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="login_background">#ff424242</color>
+    <color name="login_backdrop">#ff1a1a1a</color>
+    <color name="text">#ff5ed3db</color>
+    <color name="text_alt">#ff3e969c</color>
+    <color name="tag_alt">#ff0e63ad</color>
+    <color name="tags_backdrop">#ff282828</color>
+    <color name="tag_text">#0C3A63</color>
+</resources>

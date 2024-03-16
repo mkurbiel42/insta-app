@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.SavePostActivity">
+
+
+    <androidx.media3.ui.PlayerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vidv_postVideo"/>
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:id="@+id/imgv_postPhoto"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="36dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="36dp"
+            app:cardBackgroundColor="#aa000000"
+            app:cardCornerRadius="100dp"
+            android:id="@+id/btn_location">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:padding="12dp"
+                android:background="@color/text"
+                android:src="@drawable/location"
+                app:tint="@color/white"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#aa000000"
+            android:layout_marginTop="116dp"
+            android:layout_marginLeft="36dp"
+            app:cardCornerRadius="100dp"
+            android:id="@+id/btn_tags"
+            >
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:padding="12dp"
+                android:background="@color/text"
+                android:src="@drawable/tag"
+                app:tint="@color/white"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#aa000000"
+            android:layout_marginTop="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_alignParentRight="true"
+            app:cardCornerRadius="100dp"
+            android:id="@+id/btn_filters"
+            >
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:padding="12dp"
+                android:background="@color/text"
+                android:src="@drawable/filter"
+                app:tint="@color/white"
+                />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#bb000000"
+        android:id="@+id/backdrop"
+        android:animateLayoutChanges="true"
+        android:alpha="0"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="-600dp"
+        android:id="@+id/upper">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="20dp">
+
+            <FrameLayout
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/frame_upper"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="100dp"
+            android:id="@+id/btn_saveSettings"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:padding="8dp"
+                android:background="#fffb1942"
+                android:src="@drawable/close"
+                app:tint="@color/white"
+                />
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="56dp"
+        app:cardBackgroundColor="#aa000000"
+        app:cardCornerRadius="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_send">
+
+        <ImageView
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:padding="16dp"
+            android:background="@color/text"
+            android:src="@drawable/send"
+            app:tint="@color/white"
+            />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
